@@ -2,14 +2,10 @@
 					<section id="portfolio" class="two">
 						<div class="container">
 					
-							<header>
-								<h2>Portfolio</h2>
-							</header>
-							
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis 
-							fusce hendrerit lacus ridiculus.</p>
+							{% capture portfolio %}
+								{% include_relative_posts/2000-01-01-portfolio.md %}
+							{% endcapture %}
+							{{ portfolio | markdownify }}
 						
 							<div class="row">
 								<div class="4u">

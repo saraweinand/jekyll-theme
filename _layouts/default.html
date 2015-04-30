@@ -6,24 +6,3 @@
 {% include contact.html %}
   {{ content }}
 {% include foot.html %}
-
-
-{{ site.name }} 
-
-{% capture hero %}
-	{% include_relative_posts/2000-01-01-hero.md %}
-{% endcapture %}
-
-{{ hero | markdownify }}
-
-{% capture portfolio %}
-  {% include_relative_posts/2000-01-01-port.md %}
-{% endcapture %} 
-
-{{ portfolio | markdownify }}
-
-{% capture about %}
-  {% include_relative_posts/2000-01-01-about.md %}
-{% endcapture %}
-
-{{ about | markdownify }}

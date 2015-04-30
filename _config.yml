@@ -3,4 +3,4 @@ name: Jekyll Theme
 name-description: Web Lab - Project Two
 
 # Server Configs
-baseurl: /coco
+baseurl: /jekyll-theme

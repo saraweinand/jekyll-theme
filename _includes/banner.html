@@ -3,7 +3,9 @@
 						<div class="container">
 
 							<header>
-								{% include_relative_posts/hero.md %}
+								{% capture hero %}
+									{% include_relative _posts/2000-01-01-hero.md %}
+								{% endcapture %} 
 							</header>
 							
 							<footer>

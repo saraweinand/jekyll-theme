@@ -1,3 +1,21 @@
 ---
 layout: default
 ---
+
+{{ site.name }} Posts
+
+
+{% capture hero %}
+	{% include_relative _posts/2000-01-01-intro.md %}
+{% endcapture %}
+{{ hero | markdownify }}
+
+{% capture portfolio %}
+  {% include_relative _posts/2000-01-01-port.md %}
+{% endcapture %}
+{{ portfolio | markdownify }}
+
+{% capture about %}
+  {% include_relative _posts/2000-01-01-about.md %}
+{% endcapture %}
+{{ about | markdownify }}
